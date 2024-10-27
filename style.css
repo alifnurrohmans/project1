@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    /* --primary-color: #3498db; */
+    /* --secondary-color: #2ecc71; */
+    --color--ungu : #DF1CFF;
+    --color--pink : #EA0070;
+    --color--hijau : #1EE0E1;
+    --color--biru : #4484FF;
+    --color--biru-dongker : #07003E;
+    scroll-behavior: smooth;
+}
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+body{
+    background:linear-gradient(to bottom, #07003E,#04011C);
+}
+
+.btn-hover:hover{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* start nav */
+
+#nav.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #11075e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    z-index: 1000;
+}
+
+#nav{
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease, padding 0.3s ease; /* Tambahkan transisi */
+    padding: 40px;
+}
+
+#nav .title h2{
+    color: var(--color--pink);
+}
+
+#nav .navigasi{
+    width: 40%;
+}
+
+#nav .navigasi ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#nav .navigasi ul li a{
+    color: white;
+    opacity: 0.43;
+    text-decoration: none;
+}
+
+#nav .navigasi ul li a.active{
+    opacity: 1;
+}
+
+
+#nav .btn-daftar-sekarang{
+    color: white;
+    text-decoration: none;
+    outline: 1px solid var(--color--pink);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* end nav */
+
+/* start home */
+#home{
+    color: white;
+    margin: 15px 40px;
+    display: flex;
+}
+
+#home .left .top{
+    margin-top: 110px;
+}
+
+#home .left .top h1{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 55px;
+}
+#home .left .top h1 span{
+    font-weight: 200;
+    color: var(--color--hijau);
+    font-style: italic;
+}
+
+#home .left .top p{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 500px;
+    opacity: 0.8;
+}
+
+#home .left .top .home-daftar-sekarang{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#home .right{
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: end;
+}
+
+#home .right .gambar{
+    width: max-content;
+    border-radius: 100%;
+    border: 2px solid var(--color--biru);
+    position: relative;
+    /* background-color: blue; */
+}
+
+#home .right .gambar .gambar-kecil{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    background-color: var(--color--biru-dongker);
+    top: 65%;
+    left: 0%;
+    border-radius: 100%;
+    border: 1px solid var(--color--ungu);
+}
+
+#home .right .gambar img{
+    transform: scale(0.8);
+    width: 500px;
+}
+
+/* end home */
+
+/* start overview */
+#overview{
+    margin: 0px 40px;
+    color: white;
+    width: 55%;
+}
+
+#overview .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    font-size: 24px;
+}
+
+#overview .title img{
+    margin-left:0;
+    margin-right:10px;
+}
+
+#overview .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#overview .content .card .card-title p{
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+#overview .content .card .card-jumlah{
+    font-size: 24px;
+    font-weight: bold;
+}
+/* end overview */
+
+/* start e-course */
+#e-course{
+    scroll-margin-top: 80px;
+    margin: 150px 40px;
+    color: white;
+    text-align: center;
+}
+
+#e-course .title h1{
+    font-weight: 900;
+}
+#e-course .title span{
+    font-weight: 200;
+    color: var(--color--hijau);
+    font-style: italic;
+}
+
+#e-course .kategori{
+    margin: 40px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#e-course .kategori p{
+    border-radius: 50%;
+    padding: 10px 0;
+    width: 20%;
+}
+
+#e-course .kategori p:hover{
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+}
+#e-course .kategori p.active{
+    border: 1px solid var(--color--ungu);
+}
+
+#e-course .kategori p:hover{
+    cursor: pointer;
+}
+
+#e-course .content{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#e-course .content .card.active {
+    /* display: block; Menampilkan kartu yang memiliki class "active" */
+    opacity: 1; /* Mengatur opacity menjadi 1 */
+    position: relative;
+}
+
+#e-course .content .card{
+    position: absolute;
+    /* display: none; Menyembunyikan kartu jika tidak memiliki class "active" */
+    opacity: 0; /* Mengatur opacity awal menjadi 0 */
+    transition: opacity 0.3s ease-in-out; /* Menambahkan transisi pada opacity */
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(72, 72, 111, 0.2);
+    border-radius:10px;
+}
+
+#e-course .content .card .gambar-e-course{
+    width: 270px;
+    height: 370px;
+}
+
+#e-course .content .card .card-content .top{
+    margin-top: 10px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#e-course .content .card .card-content .top .ujung{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+}
+#e-course .content .card .card-content .bottom{
+    display: flex;
+    margin-bottom: 30px;
+}
+#e-course .content .card .btn-buy-product{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#e-course .content .card .btn-buy-product:hover{
+    cursor: pointer;
+}
+
+
+#e-course .footer{
+    margin-top: 70px;
+    width: 100%;
+}
+
+#e-course .footer .btn-explore{
+    width: 30%;
+    color: white;
+    text-decoration: none;
+    outline: 1px solid var(--color--pink);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* end e-course */
+
+/* start e-book */
+#e-book{
+    scroll-margin-top: 80px;
+    padding: 0 40px;
+    color: white;
+}
+
+#e-book .top{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+#e-book .top h1{
+    font-weight: 900;
+}
+#e-book .top h1 span{
+    font-weight: 200;
+    color: var(--color--hijau);
+    font-style: italic;
+}
+#e-book .top p{
+    padding: 30px;
+}
+
+#e-book .content{
+    width: 100%;
+}
+
+#e-book .content .slider1, #e-book .content .slider2{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+/* Menyembunyikan scrollbar */
+.slider1::-webkit-scrollbar, .slider2::-webkit-scrollbar {
+    display: none; /* Untuk browser berbasis WebKit (Chrome, Safari) */
+}
+
+#e-book .footer{
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+#e-book .footer .btn-explore{
+    width: 30%;
+    color: white;
+    text-decoration: none;
+    outline: 1px solid var(--color--pink);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* end e-book */
+
+/* start team */
+#team{
+    scroll-margin-top: 80px;
+    margin-top: 100px;
+    width: 100%;
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .left{
+    width: 30%;
+    /* background-color: #1EE0E1; */
+}
+
+#team .left h1{
+    margin: 15px 0;
+}
+#team .left h1 span{
+    color: var(--color--hijau);
+    font-weight: 200;
+    font-style: italic;
+}
+#team .left p{
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+#team .left .btn-explore-team{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Menyembunyikan scrollbar */
+#team .right {
+    display: none; /* Untuk browser berbasis WebKit (Chrome, Safari) */
+}
+
+#team .right{
+    display: inline;
+    justify-content: space-between;
+    
+    width: 60%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* Untuk Internet Explorer dan Edge */
+    scrollbar-width: none; 
+}
+
+#team .right .card{
+    width: 48%;
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#team .right .card img{
+    width: 100%;
+    border-radius: 7%;
+    height: 230px;
+}
+
+#team .right .card .nama{
+    margin: 10px 0;
+    opacity: 0.8;
+}
+#team .right .card .jabatan{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* end team */
+
+/* start kontak */
+#kontak{
+    scroll-margin-top: 80px;
+    color: white;
+    width: 100%;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+#kontak input{
+    height: 20px;
+}
+
+#kontak p{
+    opacity: 0.8;
+}
+#kontak button{
+    color: white;
+    padding: 10px 30px;
+    background: linear-gradient(to right, var(--color--ungu), var(--color--pink));
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+#kontak button:hover{
+    cursor: pointer;
+}
+
+#kontak input#message{
+    padding: 15px;
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+    background-color: var(--color--biru-dongker);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+}
+/* end kontak */
+
+/* start footer */
+#footer{
+    padding: 100px 40px 40px;
+    color: white;
+}
+
+#footer .top{
+    width: 100%;
+    text-align: center;
+}
+
+#footer .top .media-sosial1{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+#footer .top .media-sosial1 .card{
+    margin: 0 40px;
+}
+#footer .top .media-sosial1 img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+#footer .top .media-sosial1 p{
+    margin-bottom: 5px;
+}
+#footer .top .media-sosial1 a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer .top .media-sosial2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .top .media-sosial2 img{
+    width: 30px;
+    margin: 10px;
+}
+
+#footer hr{
+    margin: 40px 0;
+    opacity: 0.2;
+}
+
+#footer .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .left{
+    width: 48%;
+}
+#footer .right{
+    width: 48%;
+}
+#footer .right ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#footer .right ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+#footer .right ul li a{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+#footer .right ul li a.active{
+    opacity: 1;
+}
