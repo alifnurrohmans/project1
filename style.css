@@ -41,46 +41,72 @@ body{
     width: 100%;
     background-color: #11075e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px; 
+    padding: 20px 30px; 
     z-index: 1000;
 }
 
-#nav{
-
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #11075e;
+    padding: 20px 40px;
     color: white;
+    position: relative;
+    z-index: 1000;
+    transition: 0.2s;
+}
+
+/* Menu Container */
+#nav .menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: top 0.3s ease, padding 0.3s ease; /* Tambahkan transisi */
-    padding: 40px;
 }
 
-#nav .title h2{
+/* Title */
+#nav .title h2 {
     color: var(--color--pink);
+    margin: 0;
 }
 
-#nav .navigasi{
-    width: 40%;
+/* Burger Menu */
+#nav .burger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Default disembunyikan untuk desktop */
 }
 
-#nav .navigasi ul{
-    width: 100%;
+/* Navigasi */
+#nav .navigasi {
+    width: 70%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    list-style: none;
-}
-#nav .navigasi ul li a{
-    color: white;
-    opacity: 0.43;
-    text-decoration: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-#nav .navigasi ul li a.active{
+/* Navigasi List */
+#nav .navigasi ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+#nav .navigasi ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#nav .navigasi ul li a.active {
     opacity: 1;
 }
 
-
-#nav .btn-daftar-sekarang{
+/* Button */
+#nav .btn-daftar-sekarang {
     color: white;
     text-decoration: none;
     outline: 1px solid var(--color--pink);
@@ -88,6 +114,51 @@ body{
     font-weight: bold;
     border-radius: 5px;
 }
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    #nav{
+        flex-direction: column;
+    }
+
+    #nav .menu-container {
+        width: 100%;
+    }
+
+    #nav .burger {
+        display: block; /* Tampilkan burger menu */
+    }
+
+    #nav .navigasi {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #11075e;
+        padding: 20px 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        text-align: center;
+    }
+
+    #nav .navigasi ul {
+        flex-direction: column;
+    }
+
+    #nav .daftar-sekarang {
+        margin-top: 20px;
+    }
+
+    /* Saat aktif */
+    #nav .navigasi.show {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
 
 /* end nav */
 

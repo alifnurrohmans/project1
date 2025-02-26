@@ -9,13 +9,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <nav id="nav">
-        <div class="title">
-            <h2>Akademi Hacker</h2>
+        <div class="menu-container">
+            <div class="title">
+                <h2>Akademi Hacker</h2>
+            </div>
+            <div class="burger">&#9776;</div> <!-- Burger Menu -->
         </div>
+
         <div class="navigasi">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
@@ -24,9 +29,9 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#kontak">Contact</a></li>
             </ul>
-        </div>
-        <div class="daftar-sekarang">
-            <a href="" class="btn-daftar-sekarang btn-hover">Daftar Sekarang!</a>
+            <div class="daftar-sekarang">
+                <a href="#" class="btn-daftar-sekarang btn-hover">Daftar Sekarang!</a>
+            </div>
         </div>
     </nav>
 
@@ -48,6 +53,7 @@
             </div>
         </div>
     </div>
+    
     <div id="overview">
         <div class="title">
             <img src="img/overview-eye.png" alt="">
@@ -168,7 +174,7 @@
                 <a class="btn-buy-product">Buy Product</a>
             </div>
             <div class="card" data-category="all,website-hack">
-                <div class="card-gambar">
+                <div clas="card-gambar">
                     <img class="gambar-e-course" src="img/e-course-img.png" alt="">
                 </div>
                 <div class="card-content">

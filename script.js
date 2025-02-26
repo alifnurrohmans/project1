@@ -95,3 +95,14 @@ kategoriItems.forEach(item => {
 });
 // end e-course
 
+// start burger menu
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector(".burger");
+    const navigasi = document.querySelector(".navigasi");
+
+    burger.addEventListener("click", function () {
+        navigasi.classList.toggle("show");
+    });
+});
+// end burger menu
+
