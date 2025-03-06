@@ -126,7 +126,7 @@ body{
     }
 
     #nav .burger {
-        display: block; /* Tampilkan burger menu */
+        display: block; 
     }
 
     #nav .navigasi {
@@ -292,7 +292,7 @@ body{
     color: var(--color--hijau);
     font-style: italic;
 }
-
+/* 
 #e-course .kategori{
     margin: 40px auto;
     align-items: center;
@@ -316,7 +316,7 @@ body{
 
 #e-course .kategori p:hover{
     cursor: pointer;
-}
+} */
 
 #e-course .content{
     margin-top: 60px;
@@ -325,6 +325,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 #e-course .content .card.active {
     /* display: block; Menampilkan kartu yang memiliki class "active" */
     opacity: 1; /* Mengatur opacity menjadi 1 */
@@ -409,7 +410,7 @@ body{
 #e-book .top{
     text-align: center;
     margin: auto;
-    width: 40%;
+    width: 50%;
 }
 
 #e-book .top h1{
@@ -420,6 +421,7 @@ body{
     color: var(--color--hijau);
     font-style: italic;
 }
+
 #e-book .top p{
     padding: 30px;
 }

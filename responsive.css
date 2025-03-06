@@ -11,6 +11,8 @@
 /* Responsive Mobile */
 
 
+
+
 @media (max-width: 768px) {
     .burger {
         display: block; /* Tampilkan burger menu */
@@ -92,6 +94,122 @@
         width: max-content;
         margin: auto;
     }
+
+    #overview{
+        margin: 30px auto;
+        width: max-content;
+    }
+
+    #overview .title img{
+        transform: scale(0.9);
+    }
+
+    #overview .title h3{
+        font-size: 22px;
+    }
+
+    #overview .content{
+        /* background-color: blue; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #overview .content .card{
+        flex:0 0 50%;
+        text-align: center;
+    }
+
+    #overview .content .card .card-jumlah{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #overview .content .card p{
+        font-size: 20px;
+    }
+
+    #e-course .content{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #e-book .top{
+        width: 100%;
+    }
+
+    #team {
+        flex-wrap: wrap;
+    }
+
+    #team .left{
+        flex: 0 0 100%;
+        margin-bottom:30px;
+        text-align: center;
+    }
+
+    #team .right{
+        flex: 0 0 100%;
+    }
+
+    #team .right .card{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+
+    #team .left img{
+        display: none;
+    }
+
+    #kontak{
+        padding: 0px 40px;
+    }
+
+    #kontak input{
+        display: block;
+        width: 100%;
+        background-color: blue;
+    }
+
+    #footer .bottom{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #footer .left{
+        order: 2;
+        flex:0 0 100%;
+        text-align: center;
+    }
+    #footer .right{
+        margin-bottom: 10px;
+        order: 1;
+        flex: 0 0 100%;
+    }
+
+
+    #footer .right ul li a{
+        font-size: 14px;
+    }
+
+    #footer .left p{
+        font-size: 14px;
+    }
+
+    #footer .top .media-sosial1 .card{
+        margin: 0 10px;
+    }
+    #footer .top .media-sosial1 img{
+        width: 35px;
+        margin-bottom: 5px;
+    }
+    #footer .top .media-sosial1 p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    #footer .top .media-sosial1 a{
+        font-size: 12px;
+    }
+    
 }
 
 /* Small (Mobile - Landscape & Larger Phones) */
@@ -106,6 +224,57 @@
         text-align: center;
         font-size: 16px;
     }
+
+    #kontak{
+        padding: 0px 40px;
+    }
+
+    #kontak input{
+        display: block;
+        width: 100%;
+        background-color: blue;
+    }
+
+    #footer .bottom{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #footer .left{
+        order: 2;
+        flex:0 0 100%;
+        text-align: center;
+    }
+    #footer .right{
+        margin-bottom: 10px;
+        order: 1;
+        flex: 0 0 100%;
+    }
+
+
+    #footer .right ul li a{
+        font-size: 10px;
+    }
+
+    #footer .left p{
+        font-size: 10px;
+    }
+
+    #footer .top .media-sosial1 .card{
+        margin: 0 10px;
+    }
+    #footer .top .media-sosial1 img{
+        width: 35px;
+        margin-bottom: 5px;
+    }
+    #footer .top .media-sosial1 p{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    #footer .top .media-sosial1 a{
+        font-size: 10px;
+    }
+    
 }
 
 /* end burger menu */
@@ -141,6 +310,10 @@
     #home .right .gambar img{
         width: 300px;
     }
+
+    #e-book .top{
+        width: 80%;
+    }
     /* Tambahkan CSS khusus untuk tablet dan laptop kecil */
 }
 
@@ -156,4 +329,44 @@
 /* Extra Large (Large Desktop & Ultra-Wide Screens) */
 @media (min-width: 1200px) {  
     /* Tambahkan CSS khusus untuk layar lebar seperti monitor besar */
+}
+
+@media (max-width: 420px) {
+    #overview{
+        margin: 10px auto;
+    }
+
+    #overview .title img{
+        transform: scale(0.6);
+    }
+
+    #overview .title h3{
+        font-size: 18px;
+    }
+
+    #overview .content .card p{
+        font-size: 15px;
+    }
+
+    #home .left .top h1{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 55px;
+    }
+
+    #home .left .top p{
+        margin-bottom: 20px;
+    }
+
+    #home .left .top .home-daftar-sekarang{
+        margin-bottom: 20px;
+    }
+
+    #e-course .title h1{
+        font-size: 25px;
+    }
+
+    #e-book .top h1{
+        font-size: 25px;
+    }
 }
